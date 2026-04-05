@@ -126,11 +126,19 @@ footer {
 }
 
 #groom {
-    background-image: url('../assets/images/groom.png');
+    min-height: 90vh;
+    background-image: url('./assets/images/nour.jpeg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #bride {
-    background-image: url('../assets/images/bride.png');
+    min-height: 90vh;
+    background-image: url('./assets/images/omnia.jpeg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .title {
@@ -141,10 +149,11 @@ footer {
 
 /* Banner Section */
 .banner-section {
-    min-height: 60vh;
-    background-image: url('../assets/images/couple.png');
-    background-size: cover;
+    min-height: 90vh;
+    background-image: url('./assets/images/WhatsApp\ Image\ 2026-04-05\ at\ 21.06.11.jpeg');
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .banner-section h2 {
