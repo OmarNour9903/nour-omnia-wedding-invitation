@@ -1,0 +1,334 @@
+:root {
+    --black: #0B0B0B;
+    --gold: #D4AF37;
+    --white: #FFFFFF;
+    --overlay: rgba(0, 0, 0, 0.5);
+    --font-heading: 'Amiri', serif;
+    --font-body: 'Cairo', sans-serif;
+    --transition: all 0.5s ease;
+}
+
+[lang="en"] {
+    --font-heading: 'Amiri', serif;
+    --font-body: 'Cairo', sans-serif;
+}
+
+/* Light Mode Overrides */
+body.light-mode {
+    --black: #F5F5F5;
+    --white: #0B0B0B;
+    --overlay: rgba(255, 255, 255, 0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--black);
+    color: var(--white);
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: var(--transition);
+}
+
+body.rtl {
+    direction: rtl;
+}
+
+body.ltr {
+    direction: ltr;
+}
+
+/* Controls */
+.controls {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    gap: 10px;
+}
+
+body.ltr .controls {
+    right: auto;
+    left: 20px;
+}
+
+.btn-icon {
+    background: var(--overlay);
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    transition: var(--transition);
+}
+
+.btn-icon:hover {
+    background: var(--gold);
+    color: var(--black);
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+.quran-text {
+    font-family: var(--font-heading);
+    color: var(--gold);
+}
+
+/* Sections */
+section,
+footer {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+/* Hero Split Style */
+.split-section {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#groom {
+    background-image: url('../assets/images/groom.png');
+}
+
+#bride {
+    background-image: url('../assets/images/bride.png');
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+/* Banner Section */
+.banner-section {
+    min-height: 60vh;
+    background-image: url('../assets/images/couple.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-section h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+/* Quote Section */
+.quote-section {
+    min-height: 40vh;
+    background: var(--black);
+}
+
+.quran-text {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+/* Invitation Section */
+.invitation-section {
+    min-height: 30vh;
+    background: var(--black);
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+/* Timer Section */
+.timer-section {
+    min-height: 40vh;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--gold);
+    padding: 20px;
+    min-width: 100px;
+    border-radius: 10px;
+    background: rgba(212, 175, 55, 0.05);
+}
+
+.time-box span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--gold);
+}
+
+.time-box label {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* Details Section */
+.details-section {
+    min-height: 50vh;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    font-size: 1.3rem;
+}
+
+.detail-item .icon {
+    font-size: 2rem;
+}
+
+/* Location Section */
+.location-section {
+    flex-direction: column;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 700px;
+    border: 2px solid var(--gold);
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.btn-gold {
+    display: inline-block;
+    padding: 15px 30px;
+    background: var(--gold);
+    color: var(--black);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: var(--transition);
+}
+
+.btn-gold:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+/* Closing Section */
+.closing-section {
+    background: var(--black);
+    flex-direction: column;
+}
+
+.closing-msg {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.closing-section h3 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.credits {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+    padding-top: 20px;
+}
+
+.designer-link {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .banner-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .quran-text {
+        font-size: 1.4rem;
+    }
+
+    .countdown-container {
+        gap: 15px;
+    }
+
+    .time-box {
+        min-width: 80px;
+        padding: 10px;
+    }
+
+    .time-box span {
+        font-size: 1.8rem;
+    }
+
+    .detail-item {
+        font-size: 1.1rem;
+    }
+}
+
+/* Image Optimization */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

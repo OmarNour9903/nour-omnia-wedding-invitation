@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعوة زفاف | نور & أمنية</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-mode">
+    <!-- Controls (Fixed) -->
+    <div class="controls">
+        <button id="langToggle" class="btn-icon" aria-label="Toggle Language">EN</button>
+        <button id="themeToggle" class="btn-icon" aria-label="Toggle Theme">🌙</button>
+    </div>
+
+    <!-- 1. Hero Section (Groom) -->
+    <section id="groom" class="split-section hero-section">
+        <div class="overlay"></div>
+        <div class="content fade-in">
+            <h1 data-key="groom_name">نور الخليل</h1>
+            <p class="title" data-key="groom_title">العريس</p>
+        </div>
+    </section>
+
+    <!-- 2. Bride Section -->
+    <section id="bride" class="split-section hero-section">
+        <div class="overlay"></div>
+        <div class="content fade-in">
+            <h1 data-key="bride_name">أمنية محمد</h1>
+            <p class="title" data-key="bride_title">العروسة</p>
+        </div>
+    </section>
+
+    <!-- 3. Couple Section -->
+    <section id="couple" class="banner-section">
+        <div class="overlay"></div>
+        <div class="content fade-in">
+            <h2 data-key="couple_names">نور ♥ أمنية</h2>
+            <p class="date" data-key="event_date">الثلاثاء 7 أبريل 2026</p>
+        </div>
+    </section>
+
+    <!-- 4. Quote Section -->
+    <section id="quotes" class="quote-section">
+        <div class="content fade-in">
+            <p class="quran-text" data-key="quote1">﴿وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم...﴾</p>
+            <p class="quran-text" data-key="quote2">﴿رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا...﴾</p>
+        </div>
+    </section>
+
+    <!-- 5. Invitation Message -->
+    <section id="invitation" class="invitation-section">
+        <div class="content fade-in">
+            <p data-key="invitation_message">"يسعدنا ويشرفنا حضوركم ومشاركتنا فرحتنا في هذا اليوم المميز، ووجودكم هو
+                أجمل هدية لنا 🤍"</p>
+        </div>
+    </section>
+
+    <!-- 6. Countdown Timer -->
+    <section id="timer" class="timer-section">
+        <div class="content fade-in">
+            <div class="countdown-container">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <label data-key="days">أيام</label>
+                </div>
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <label data-key="hours">ساعات</label>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <label data-key="minutes">دقائق</label>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <label data-key="seconds">ثواني</label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Event Details -->
+    <section id="details" class="details-section">
+        <div class="content fade-in">
+            <div class="detail-item">
+                <span class="icon">📆</span>
+                <p data-key="event_date">الثلاثاء 7 أبريل 2026</p>
+            </div>
+            <div class="detail-item">
+                <span class="icon">⏰</span>
+                <p data-key="event_time">من 5 مساءً إلى 9 مساءً</p>
+            </div>
+            <div class="detail-item">
+                <span class="icon">📍</span>
+                <p data-key="event_location">قاعة جاردينيا 2 – المنيا</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Location -->
+    <section id="location" class="location-section">
+        <div class="content fade-in">
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1754.7648354674744!2d30.7410313!3d28.1006509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145b23f668fc7277%3A0xc391136bdefa7092!2sGardenia%20Hall%202!5e0!3m2!1sen!2seg!4v1712345678901!5m2!1sen!2seg"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <a href="https://maps.app.goo.gl/3fX3yN5y4p5q7P8A9" target="_blank" class="btn-gold"
+                data-key="open_in_maps">افتح في خرائط جوجل</a>
+        </div>
+    </section>
+
+    <!-- 9. Closing -->
+    <footer id="closing" class="closing-section">
+        <div class="content fade-in">
+            <p class="closing-msg" data-key="closing_message">"في انتظاركم لمشاركتنا أجمل لحظات حياتنا 🤍"</p>
+            <h3 data-key="closing_names">نور & أمنية</h3>
+
+            <div class="credits">
+                <p data-key="designed_by">صُممت هذه الدعوة بعناية واهتمام بالتفاصيل بواسطة</p>
+                <a href="https://wa.me/201147420383" target="_blank" class="designer-link" data-key="designer_name">عمر
+                    نور</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
